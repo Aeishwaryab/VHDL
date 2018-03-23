@@ -1,0 +1,1 @@
+-wto "da3ffc7f96cf4d3ea9c1d2264f5dcd55" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "EdgeD_behav" "xil_defaultlib.EdgeD" -log "elaborate.log" 

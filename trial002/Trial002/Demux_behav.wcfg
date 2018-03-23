@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Mux_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Mux" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1080833333fs"></ZoomStartTime>
+      <ZoomEndTime time="1223833334fs"></ZoomEndTime>
+      <Cursor1Time time="1200000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/Mux/In0" type="logic">
+      <obj_property name="ElementShortName">In0</obj_property>
+      <obj_property name="ObjectShortName">In0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Mux/In1" type="logic">
+      <obj_property name="ElementShortName">In1</obj_property>
+      <obj_property name="ObjectShortName">In1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Mux/In2" type="logic">
+      <obj_property name="ElementShortName">In2</obj_property>
+      <obj_property name="ObjectShortName">In2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Mux/In3" type="logic">
+      <obj_property name="ElementShortName">In3</obj_property>
+      <obj_property name="ObjectShortName">In3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Mux/So" type="logic">
+      <obj_property name="ElementShortName">So</obj_property>
+      <obj_property name="ObjectShortName">So</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Mux/S1" type="logic">
+      <obj_property name="ElementShortName">S1</obj_property>
+      <obj_property name="ObjectShortName">S1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Mux/Op" type="logic">
+      <obj_property name="ElementShortName">Op</obj_property>
+      <obj_property name="ObjectShortName">Op</obj_property>
+   </wvobject>
+</wave_config>

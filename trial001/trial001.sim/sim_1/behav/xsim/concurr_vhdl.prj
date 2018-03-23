@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../trial001.srcs/sources_1/new/concurr.vhd" \
+
+# Do not sort compile order
+nosort

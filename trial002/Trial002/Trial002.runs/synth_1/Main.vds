@@ -1,0 +1,236 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 16 13:05:26 2018
+# Process ID: 6576
+# Current directory: C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.runs/synth_1
+# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file: C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.runs/synth_1/Main.vds
+# Journal file: C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace
+Command: synth_design -top Main -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7408 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 376.402 ; gain = 98.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Main' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Main.vhd:49]
+INFO: [Synth 8-3491] module 'Mux' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Mux.vhd:34' bound to instance 'M' of component 'Mux' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Main.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'Mux' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Mux.vhd:39]
+INFO: [Synth 8-3491] module 'In3And' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:34' bound to instance 'C1' of component 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Mux.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'In3And' (1#1) [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:39]
+INFO: [Synth 8-3491] module 'In3And' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:34' bound to instance 'C2' of component 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Mux.vhd:48]
+INFO: [Synth 8-3491] module 'In3And' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:34' bound to instance 'C3' of component 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Mux.vhd:49]
+INFO: [Synth 8-3491] module 'In3And' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:34' bound to instance 'C4' of component 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Mux.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Mux' (2#1) [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Mux.vhd:39]
+INFO: [Synth 8-3491] module 'Demux' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Demux.vhd:34' bound to instance 'D' of component 'Demux' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Main.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'Demux' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Demux.vhd:44]
+INFO: [Synth 8-3491] module 'In3And' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:34' bound to instance 'OP0' of component 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Demux.vhd:52]
+INFO: [Synth 8-3491] module 'In3And' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:34' bound to instance 'OP1' of component 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Demux.vhd:53]
+INFO: [Synth 8-3491] module 'In3And' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:34' bound to instance 'OP2' of component 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Demux.vhd:54]
+INFO: [Synth 8-3491] module 'In3And' declared at 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:34' bound to instance 'OP3' of component 'In3And' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Demux.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'Demux' (3#1) [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Demux.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Main' (4#1) [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Main.vhd:49]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 428.582 ; gain = 150.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 428.582 ; gain = 150.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 428.582 ; gain = 150.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 428.582 ; gain = 150.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net t_OBUF with 1st driver pin 'i_7/O' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Main.vhd:34]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net t_OBUF with 2nd driver pin 'i_6/O' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:42]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net t_OBUF with 3rd driver pin 'i_5/O' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/Main.vhd:34]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net t_OBUF with 4th driver pin 'i_4/O' [C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.srcs/sources_1/new/In3And.vhd:42]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     8|
+|2     |IBUF |     7|
+|3     |OBUF |     5|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    20|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 4 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 587.316 ; gain = 308.934
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 0 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 700.262 ; gain = 434.184
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ga62mos/VHLDsample/trial002/Trial002/Trial002.runs/synth_1/Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.036 . Memory (MB): peak = 700.262 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 16 13:05:46 2018...

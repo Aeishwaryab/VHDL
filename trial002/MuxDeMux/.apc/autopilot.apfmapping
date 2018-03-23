@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="trial001.xpr" path="C:\Users\ga62mos\VHLDsample\trial001\trial001.xpr"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

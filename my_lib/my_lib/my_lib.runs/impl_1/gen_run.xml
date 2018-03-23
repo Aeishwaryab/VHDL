@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1521459934">
+  <File Type="PWROPT-DCP" Name="GenAnd_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="GenAnd_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="GenAnd.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="GenAnd_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="GenAnd_reports.tcl"/>
+  <File Type="BG-DRC" Name="GenAnd.drc"/>
+  <File Type="OPT-DCP" Name="GenAnd_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="GenAnd.hwdef"/>
+  <File Type="OPT-DRC" Name="GenAnd_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="GenAnd_placed.dcp"/>
+  <File Type="PLACE-IO" Name="GenAnd_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="GenAnd_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="GenAnd_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="GenAnd_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="GenAnd_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="GenAnd_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="GenAnd_physopt.dcp"/>
+  <File Type="BG-BIT" Name="GenAnd.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="GenAnd_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="GenAnd_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="GenAnd_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="GenAnd_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="GenAnd_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="GenAnd.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="GenAnd_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="GenAnd.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="GenAnd_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="GenAnd.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="GenAnd_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="GenAnd.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="GenAnd_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="GenAnd_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="GenAnd_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="GenAnd_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="GenAnd_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="GenAnd_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="GenAnd_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="GenAnd.vdi"/>
+  <File Type="ROUTE-CLK" Name="GenAnd_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="GenAnd_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GenAnd_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="GenAnd.nky"/>
+  <File Type="BITSTR-BMM" Name="GenAnd_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="GenAnd.mmi"/>
+  <File Type="BITSTR-LTX" Name="GenAnd.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="GenAnd.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/GenAnd.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="my_lib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="GenAnd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

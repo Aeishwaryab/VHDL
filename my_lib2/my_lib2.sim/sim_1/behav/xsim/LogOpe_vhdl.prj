@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl work  \
+"../../../../my_lib2.srcs/sources_1/new/LogOpe.vhd" \
+
+# Do not sort compile order
+nosort

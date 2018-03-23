@@ -1,0 +1,15 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 95961e67a86b44a1a2c125031ac726ef --incr --debug typical --relax --mt 2 -L my_lib -L secureip --snapshot LogEle_behav my_lib.LogEle -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture doand of entity my_lib.logele
+Built simulation snapshot LogEle_behav

@@ -1,0 +1,12 @@
+
+{ 
+    crc :  6612527510699207236  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 95961e67a86b44a1a2c125031ac726ef --incr --debug typical --relax --mt 2 -L my_lib -L secureip --snapshot GenAnd_behav my_lib.GenAnd" , 
+    buildDate : "Dec 15 2017" , 
+    buildTime : "21:07:18" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2017.4\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/GenAnd_behav/xsimk.exe\"   \"xsim.dir/GenAnd_behav/obj/xsim_0.win64.obj\" \"xsim.dir/GenAnd_behav/obj/xsim_1.win64.obj\" \"C:\\Xilinx\\Vivado\\2017.4\\lib\\win64.o\\\\librdi_simulator_kernel.dll\" \"C:\\Xilinx\\Vivado\\2017.4\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

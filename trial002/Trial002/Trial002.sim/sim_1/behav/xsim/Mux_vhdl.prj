@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl work  \
+"../../../../../../my_lib/my_lib/my_lib.srcs/sources_1/new/GenAnd.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../Trial002.srcs/sources_1/new/Mux.vhd" \
+
+# Do not sort compile order
+nosort
