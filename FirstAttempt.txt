@@ -1,1 +1,0 @@
-This is my first attempt to commit to GIT.
