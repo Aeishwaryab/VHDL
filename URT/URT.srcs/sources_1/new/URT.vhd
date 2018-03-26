@@ -21,7 +21,9 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -33,16 +35,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity RegisterSerial is
     generic(size: integer:=4);
-    Port ( Dr,Dl : inout STD_LOGIC;
-           Q: inout STD_LOGIC_VECTOR (size-1 downto 0):=(others=>'0'); -- Dr-> SR input Dl-> SL input Q-> parallel Output vector
-           Dp: in STD_LOGIC_VECTOR (size-1 downto 0):=(others=>'0');  -- parallel input
-           CLK : in STD_LOGIC;        -- clock 
-           Clr,Rst,SR : in STD_LOGIC; -- Clr-> clear signal; Rst-> reset to all 1s; SR=1-> shift right SR=0-> Shift left
-           PSn: in STD_LOGIC_VECTOR(1 downto 0):="00"); -- Parallel input high Serial output low Eg. PSn=00->SISO; PSn=01->PISO; PSn=10->SIPO; PSn=11->PIPO; 
+    Port ( Dr,Dl : inout BIT;
+           Q: inout BIT_VECTOR (size-1 downto 0):=(others=>'0'); -- Dr-> SR input Dl-> SL input Q-> parallel Output vector
+           Dp: inout BIT_VECTOR (size-1 downto 0):=(others=>'0');  -- parallel input
+           CLK : in BIT;        -- clock 
+           Clr,Rst,SR : in BIT; -- Clr-> clear signal; Rst-> reset to all 1s; SR=1-> shift right SR=0-> Shift left
+           PSn: in BIT_VECTOR(1 downto 0):="00"); -- Parallel input high Serial output low Eg. PSn=00->SISO; PSn=01->PISO; PSn=10->SIPO; PSn=11->PIPO; 
 end RegisterSerial;
 
 architecture GenericReg of RegisterSerial is
-signal Dtemp:STD_LOGIC_VECTOR (size-1 downto 0):=(others=>'0'); -- required only for PISO operation
+signal Dtemp:BIT_VECTOR (size-1 downto 0):=(others=>'0'); -- required only for PISO operation
 signal n: integer:=0;                    -- required only for PISO operation
 begin
 process(CLK, Rst, Clr)
@@ -94,27 +96,20 @@ begin
              else
                   if (SR = '1') then  -- Shift Right active
                   -------------ERROR IN PISO-----------
-                         Dr<=Dtemp(n);        
+                         Dr<=Dtemp(3);        
                          Q(0)<= Dr;
                          Dl<=Q(size-1); 
                          for i in 1 to size-1 loop
                              Q(i)<=Q(i-1);
                          end loop;
-                         n <= n+1; 
-                         if (n=size) then
-                              n<=0;
-                         end if;
+                      
                   else                -- Shift right inactive
-                         Dl<=Dtemp(n);
+                         Dl<=Dtemp(3);
                          Q(3)<=Dl;
                          Dr<=Q(0);
                          for i in 1 to size-1 loop
                              Q(size-1-i)<=Q(size-i);
                          end loop;
-                         n <= n+1; 
-                         if (n=size) then
-                               n<=0;
-                          end if;
                   end if;
          end if;       
      end if;   
