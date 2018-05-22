@@ -4,6 +4,7 @@ Use the VHDL syntax Guide to know about basic syntax.
 I2C.docx is a description of how to implement I2C protocol. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Implementation of various commands and functions. 
+//
 Trial001- Half and Full Adders. (Component Instantiation)
 Trial002 -  Multiplexer and Demultiplexer with component instatiation
 Trial003 - SR Flip/Flop
