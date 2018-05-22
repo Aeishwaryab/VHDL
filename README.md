@@ -1,7 +1,5 @@
 # VHDL
 The folder contains basic projects for starting in VHDL.  <br/>
-Use the VHDL syntax Guide to know about basic syntax.  <br/>
-I2C.docx is a description of how to implement I2C protocol. <br/>
 ------------------------------------------------------------------- <br/>
 Implementation of various commands and functions. <br/>
 - Trial001- Half and Full Adders. (Component Instantiation) <br/>
